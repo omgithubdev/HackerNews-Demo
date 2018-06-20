@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Hacker News</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="refresh_data">Refresh Top Story</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+
+    <string name="server_client_id">207094294269-qn1jm7mg118b4emato5g50pbgbttm7h9.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">171526093525111</string>
+    <string name="facebook_application_id" translatable="false">171526093525111</string>
+
+    <string name="fb_login_protocol_scheme">fb171526093525111</string>
+    <string name="title_activity_top_stories">TopStoriesActivity</string>
+
+    <string name="toolbar_title_top_stories">Top Stories</string>
+
+    //Login Screen
+    <string name="mobile">mobile</string>
+    <string name="sign_in">Login with \nPHONE NUMBER</string>
+    <string name="login_with">or Login with</string>
+    <string name="title_activity_article">ArticleActivity</string>
+</resources>

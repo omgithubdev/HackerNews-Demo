@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "207094294269",
+    "firebase_url": "https://hacker-news-1528991690012.firebaseio.com",
+    "project_id": "hacker-news-1528991690012",
+    "storage_bucket": "hacker-news-1528991690012.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207094294269:android:eeed4aa51b88d863",
+        "android_client_info": {
+          "package_name": "com.omagrahari.hackernews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207094294269-uqvanotapltm9ueoetoo7ej4malten9a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "207094294269-44kveou1j8a26bdu02joo0j20rmhcnfj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.omagrahari.hackernews",
+            "certificate_hash": "0c02e56c17f86d12d956fa2ba3e38e8af87979ff"
+          }
+        },
+        {
+          "client_id": "207094294269-qn1jm7mg118b4emato5g50pbgbttm7h9.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "207094294269-uqvanotapltm9ueoetoo7ej4malten9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbSGHTSh8qllA409PQXPhQczQFp1g15e0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207094294269-uqvanotapltm9ueoetoo7ej4malten9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

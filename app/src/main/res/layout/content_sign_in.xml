@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.omagrahari.hackernews.activity.Authentication.SignInActivity"
+    tools:showIn="@layout/activity_sign_in">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_64"
+        android:layout_marginRight="@dimen/dimen_64"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_28"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="@string/mobile"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_28" />
+
+        <Button
+            android:id="@+id/firebase_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginRight="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_48"
+            android:background="@drawable/g_signin_button_back"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:gravity="center"
+            android:text="@string/login_with"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/fb_login"
+                android:layout_width="@dimen/dimen_48"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/fb_icon" />
+
+            <RelativeLayout
+                android:id="@+id/g_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_16"
+                android:background="@drawable/g_signin_button_back"
+                android:padding="@dimen/dimen_4">
+
+                <ImageView
+                    android:id="@+id/g_icon"
+                    android:layout_width="@dimen/dimen_36"
+                    android:layout_height="@dimen/dimen_36"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/google_sign_in_icon" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/g_login"
+            android:layout_margin="@dimen/dimen_4"
+            android:padding="@dimen/dimen_8">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/color_white" />
+
+</RelativeLayout>

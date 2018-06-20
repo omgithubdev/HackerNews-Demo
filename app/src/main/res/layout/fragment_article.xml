@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+            </WebView>
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/noitemfound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/avenirnextpro_regular"
+            android:gravity="center"
+            android:letterSpacing="0"
+            android:paddingBottom="@dimen/dimen_4"
+            android:paddingTop="@dimen/dimen_4"
+            android:text="Sorry, no article found"
+            android:textColor="@color/manatee"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!-- Network Problem -->
+    <FrameLayout
+        android:id="@+id/network_problem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/avenirnextpro_regular"
+            android:gravity="center"
+            android:letterSpacing="0"
+            android:paddingBottom="@dimen/dimen_4"
+            android:paddingTop="@dimen/dimen_4"
+            android:text="Network problem, Please Retry!"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <!-- Progress Bar -->
+    <FrameLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="@dimen/dimen_48"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorAccent" />
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
